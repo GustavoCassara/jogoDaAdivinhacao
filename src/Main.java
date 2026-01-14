@@ -15,19 +15,19 @@ public class Main {
             tentativas++;
 
             if (chute == rnd) {
-                System.out.println("Parabéns, você acertou o numero em "+tentativas+" tentativas. O número era: "+rnd);
+                System.out.println("Parabéns, você acertou o numero em "+tentativas+" tentativas.");
                 break; //intenrrompe o loop
             }
             else if (chute > rnd){
                 System.out.println("O número aleatório é menor");
             }
-            else {
+            else if (chute < rnd) {
                 System.out.println("O número aleatório é maior");
             }
         }
 
         if (tentativas == 5 && chute != rnd){
-            System.out.println("Você não conseguiu acertar o número em 5 tentativas");
+            System.out.println("Você não conseguiu acertar o número em 5 tentativas. O número era: "+rnd);
         }
     }
 }
