@@ -9,7 +9,7 @@ public class Main {
         int chute = 0;
         int tentativas = 0;
 
-        while (chute != rnd){
+        while (tentativas < 5) {
             System.out.println("Digite um numero de 1 a 100");
             chute = leitura.nextInt();
             tentativas++;
